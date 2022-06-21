@@ -1,776 +1,437 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-		<title>Robô de Gols &#8211; ROBÔ DE GOLS</title>
-<meta name='robots' content='max-image-preview:large' />
-<script type='application/javascript'>console.log('PixelYourSite Free version 9.0.0');</script>
-<link rel="alternate" type="application/rss+xml" title="Feed para ROBÔ DE GOLS &raquo;" href="https://robodeanalises.com.br/feed" />
-<link rel="alternate" type="application/rss+xml" title="Feed de comentários para ROBÔ DE GOLS &raquo;" href="https://robodeanalises.com.br/comments/feed" />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://robodeanalises.com.br/wp-includes/css/dist/block-library/style.min.css?ver=6.0' type='text/css' media='all' />
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-</style>
-<link rel='stylesheet' id='hello-elementor-css'  href='https://robodeanalises.com.br/wp-content/themes/hello-elementor/style.min.css?ver=2.5.0' type='text/css' media='all' />
-<link rel='stylesheet' id='hello-elementor-theme-style-css'  href='https://robodeanalises.com.br/wp-content/themes/hello-elementor/theme.min.css?ver=2.5.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.6.1' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-8-css'  href='https://robodeanalises.com.br/wp-content/uploads/elementor/css/post-8.css?ver=1652367389' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.15.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-pro-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.2.1' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-global-css'  href='https://robodeanalises.com.br/wp-content/uploads/elementor/css/global.css?ver=1652367389' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-259-css'  href='https://robodeanalises.com.br/wp-content/uploads/elementor/css/post-259.css?ver=1655153365' type='text/css' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.0' id='jquery-bind-first-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3' id='js-cookie-js'></script>
-<script type='text/javascript' id='pys-js-extra'>
-/* <![CDATA[ */
-var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","name":"PageView","pixelIds":["529849962027508"],"eventID":"c9a0313b-6481-41f8-b357-6a2fff22c02f","params":{"page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":{"signal_form":{"facebook":{"delay":0,"type":"dyn","name":"Signal","pixelIds":["529849962027508"],"eventID":"2663b1bb-917a-4d1c-9bc1-f26be9dc0d10","params":{"event_action":"Form","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_form","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""},"ga":{"delay":0,"type":"dyn","name":"Signal","trackingIds":["G-SK20QXH16Z"],"params":{"event_action":"Form","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_form","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"eventID":"","woo_order":"","edd_order":""}},"signal_download":{"facebook":{"delay":0,"type":"dyn","name":"Signal","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"pixelIds":["529849962027508"],"eventID":"640365f7-85be-47b2-bb54-1fb51b58a977","params":{"event_action":"Download","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_download","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""},"ga":{"delay":0,"type":"dyn","name":"Signal","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"trackingIds":["G-SK20QXH16Z"],"params":{"event_action":"Download","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_download","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"eventID":"","woo_order":"","edd_order":""}},"signal_comment":{"facebook":{"delay":0,"type":"dyn","name":"Signal","pixelIds":["529849962027508"],"eventID":"20787b75-b0ed-43a3-8689-3399b5bac66f","params":{"event_action":"Comment","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_comment","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""},"ga":{"delay":0,"type":"dyn","name":"Signal","trackingIds":["G-SK20QXH16Z"],"params":{"event_action":"Comment","page_title":"Rob\u00f4 de Gols","post_type":"page","post_id":259,"plugin":"PixelYourSite","user_role":"guest","event_url":"robodeanalises.com.br\/robo-de-gols"},"e_id":"signal_comment","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"eventID":"","woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["529849962027508"],"advancedMatching":[],"removeMetadata":false,"contentParams":{"post_type":"page","post_id":259,"content_name":"Rob\u00f4 de Gols"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"ajaxForServerEvent":true,"serverApiEnabled":true,"wooCRSendFromServer":false},"ga":{"trackingIds":["G-SK20QXH16Z"],"enhanceLinkAttr":false,"anonimizeIP":false,"commentEventEnabled":true,"commentEventNonInteractive":false,"downloadEnabled":true,"downloadEventNonInteractive":false,"formEventEnabled":true,"crossDomainEnabled":false,"crossDomainAcceptIncoming":false,"crossDomainDomains":[],"isDebugEnabled":[false],"disableAdvertisingFeatures":false,"disableAdvertisingPersonalization":false,"wooVariableAsSimple":false},"debug":"","siteUrl":"https:\/\/robodeanalises.com.br","ajaxUrl":"https:\/\/robodeanalises.com.br\/wp-admin\/admin-ajax.php","enable_remove_download_url_param":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"signal":[""],"woo":{"enabled":false},"edd":{"enabled":false}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.0.0' id='pys-js'></script>
-<link rel="https://api.w.org/" href="https://robodeanalises.com.br/wp-json/" /><link rel="alternate" type="application/json" href="https://robodeanalises.com.br/wp-json/wp/v2/pages/259" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://robodeanalises.com.br/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://robodeanalises.com.br/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 6.0" />
-<link rel="canonical" href="https://robodeanalises.com.br/robo-de-gols" />
-<link rel='shortlink' href='https://robodeanalises.com.br/?p=259' />
-<link rel="alternate" type="application/json+oembed" href="https://robodeanalises.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frobodeanalises.com.br%2Frobo-de-gols" />
-<link rel="alternate" type="text/xml+oembed" href="https://robodeanalises.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frobodeanalises.com.br%2Frobo-de-gols&#038;format=xml" />
-<meta name="facebook-domain-verification" content="kiwlh0ek3qi8t069w2oj1w0xh91jq7" />
-<link rel="icon" href="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/cropped-MillionsBot-Transparente-1-1-32x32.png" sizes="32x32" />
-<link rel="icon" href="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/cropped-MillionsBot-Transparente-1-1-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/cropped-MillionsBot-Transparente-1-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://robodeanalises.com.br/wp-content/uploads/2022/04/cropped-MillionsBot-Transparente-1-1-270x270.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="page-template page-template-elementor_canvas page page-id-259 elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-259">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="259" class="elementor elementor-259">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-57be3096 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="57be3096" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-222868fe" data-id="222868fe" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-544b3abe elementor-widget elementor-widget-image" data-id="544b3abe" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="785" height="1024" src="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-785x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-785x1024.png 785w, //i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-230x300.png 230w, //i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-768x1002.png 768w, //i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-1177x1536.png 1177w, //i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/SoccerBOT-Transparente-1570x2048.png 1570w" sizes="(max-width: 785px) 100vw, 785px" />															</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7dd48395 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7dd48395" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2a3b7fd0" data-id="2a3b7fd0" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-63872be4 elementor-widget elementor-widget-heading" data-id="63872be4" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">ROBÔ DE <font color="#18c800">GOLS</font>
-PARA TRADING ESPORTIVO! 🤖</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a5bc6df elementor-widget elementor-widget-html" data-id="a5bc6df" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<!-- Global site tag (gtag.js) - Google Ads: 10904992946 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10904992946"></script>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/com.css">
+
+    <!-- Título da Página -->
+    <title>Assista o video</title>
+    
+    <style type="text/css">
+      header {
+        color: white;
+        background-image: url("assets/img/bg.jpeg");
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+      }
+    </style>
+    
+   <!-- Meta Pixel Code -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10904992946');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '699145594655336');
+fbq('track', 'PageView');
 </script>
-		</div>
-				</div>
-				<div class="elementor-element elementor-element-2a2bc83b elementor-widget elementor-widget-text-editor" data-id="2a2bc83b" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>O <span style="color: #18c800;"><strong>SoccerBOT</strong> </span>analisa mais de 1.000 partidas de futebol por dia e te envia os melhores jogos com alta tendência de <strong>GOLS</strong> ⚽️</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-e462760 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="e462760" data-element_type="widget" data-settings="{&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/robodeanalises.com.br\/wp-content\/uploads\/2022\/04\/THUMB.png&quot;,&quot;id&quot;:&quot;21&quot;},&quot;loop&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;vimeo&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-video .elementor-widget-container{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:50%}.elementor-widget-video .elementor-custom-embed-image-overlay{cursor:pointer;text-align:center}.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i{opacity:1}.elementor-widget-video .elementor-custom-embed-image-overlay img{display:block;width:100%}.elementor-widget-video .e-hosted-video .elementor-video{-o-object-fit:cover;object-fit:cover}</style>		<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
-			<iframe class="elementor-video-iframe" allowfullscreen title="Player de Vídeo vimeo" src="https://player.vimeo.com/video/705727209?color&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t="></iframe>				<div class="elementor-custom-embed-image-overlay" style="background-image: url(//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/THUMB.png);">
-														</div>
-					</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-166d8e6 elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="166d8e6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;shake&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://pay.kiwify.com.br/Tel8bQj" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bob" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">SIM! QUERO LUCRAR COM O ROBÔ</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-56644d9a elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="56644d9a" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget.elementor-icon-list--layout-inline .elementor-widget-container{overflow:hidden}.elementor-widget .elementor-icon-list-items.elementor-inline-items{margin-right:-8px;margin-left:-8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-right:8px;margin-left:8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{width:auto;left:auto;right:auto;position:relative;height:100%;border-top:0;border-bottom:0;border-right:0;border-left-width:1px;border-style:solid;right:-8px}.elementor-widget .elementor-icon-list-items{list-style-type:none;margin:0;padding:0}.elementor-widget .elementor-icon-list-item{margin:0;padding:0;position:relative}.elementor-widget .elementor-icon-list-item:after{position:absolute;bottom:0;width:100%}.elementor-widget .elementor-icon-list-item,.elementor-widget .elementor-icon-list-item a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:inherit}.elementor-widget .elementor-icon-list-icon+.elementor-icon-list-text{-ms-flex-item-align:center;align-self:center;padding-left:5px}.elementor-widget .elementor-icon-list-icon{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget .elementor-icon-list-icon svg{width:var(--e-icon-list-icon-size,1em);height:var(--e-icon-list-icon-size,1em)}.elementor-widget .elementor-icon-list-icon i{width:1.25em;font-size:var(--e-icon-list-icon-size)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon{text-align:var(--e-icon-list-icon-align)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg{margin:var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0)}.elementor-widget.elementor-list-item-link-full_width a{width:100%}.elementor-widget.elementor-align-center .elementor-icon-list-item,.elementor-widget.elementor-align-center .elementor-icon-list-item a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-align-center .elementor-inline-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-left .elementor-icon-list-item,.elementor-widget.elementor-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-align-left .elementor-inline-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-align-right .elementor-icon-list-item,.elementor-widget.elementor-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget.elementor-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item:after{right:0}@media (max-width:1024px){.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item a,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item:after{right:0}}@media (max-width:767px){.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item a,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item:after{right:0}}</style>		<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
-										<span class="elementor-icon-list-text">Suas informações estão seguras conosco.</span>
-									</li>
-						</ul>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-74b0a040 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74b0a040" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7030de6" data-id="7030de6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3833c7d2 elementor-widget elementor-widget-heading" data-id="3833c7d2" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">COMO <span style="background-color:#18C800">FUNCIONA</span>?</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-79466cc1 elementor-widget elementor-widget-text-editor" data-id="79466cc1" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>O <b>SoccerBOT</b> executa uma metodologia de análise simples e eficaz que é aplicada de forma 100% automática para encontrar jogos com alta tendência de sair <strong>GOLS</strong>, que é um dos mercados <strong>mais lucrativos</strong> da corretora. </p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-dfbb92a elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="dfbb92a" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;dots&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper">
-								<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4161-300x204.jpg" alt="IMG_4161" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4163-300x138.jpg" alt="IMG_4163" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4165-300x148.jpg" alt="IMG_4165" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4158-300x167.jpg" alt="IMG_4158" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4160-300x140.jpg" alt="IMG_4160" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/IMG_4164-300x157.jpg" alt="IMG_4164" /></figure></div>			</div>
-												<div class="swiper-pagination"></div>
-													</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-3c553bdb elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="3c553bdb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;shake&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://pay.kiwify.com.br/Tel8bQj" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bob" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">QUERO ADQUIRIR POR MENOS DE R$0,33 POR DIA!</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-42c9bcba elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="42c9bcba" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
-										<span class="elementor-icon-list-text">Suas informações estão seguras conosco.</span>
-									</li>
-						</ul>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-fed40f7 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fed40f7" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style>		<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-64d4b7b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64d4b7b5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-edfa691" data-id="edfa691" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-2159f4ee elementor-widget elementor-widget-heading" data-id="2159f4ee" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">CONHEÇA AS <span style="background-color:#18C800">VANTAGENS:</span></h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7d1e0072 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d1e0072" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-34deb1ef" data-id="34deb1ef" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-64a3f41c elementor-widget elementor-widget-image" data-id="64a3f41c" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="313" height="281" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24.png 313w, //i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24-300x269.png 300w" sizes="(max-width: 313px) 100vw, 313px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-475a104d elementor-widget elementor-widget-heading" data-id="475a104d" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Você terá um robô analisando e enviando
-os melhores jogos 24 horas com um método
-de análise exclusivo para você investir de forma
-inteligente e profissional no Trading Esportivo.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-756189fa elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="756189fa" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-28050c2b" data-id="28050c2b" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-76a96b3d elementor-widget elementor-widget-image" data-id="76a96b3d" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="323" height="344" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO.png 323w, //i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO-282x300.png 282w" sizes="(max-width: 323px) 100vw, 323px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-3a8dcd91 elementor-widget elementor-widget-heading" data-id="3a8dcd91" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Agora você não irá precisar mais ficar analisando
-jogo por jogo. O SoccerBOT fará isso por você, e
-o melhor… Lucre em apenas alguns cliques
-apenas copiando e colando os sinais.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-293f339f elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="293f339f" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3c261c07" data-id="3c261c07" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-175ea6ea elementor-widget elementor-widget-image" data-id="175ea6ea" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="432" height="331" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE.png 432w, //i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE-300x230.png 300w" sizes="(max-width: 432px) 100vw, 432px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-544c1b41 elementor-widget elementor-widget-heading" data-id="544c1b41" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Com os filtros e estratégias do robô que já
-foram testados e validados, você terá resultados
-positivos e consistentes em suas operações,
-obviamente sempre mantendo a gestão de banca.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<div class="elementor-element elementor-element-5f4b768 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="5f4b768" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c32c306 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c32c306" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-debdc67" data-id="debdc67" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-154ab8e elementor-widget elementor-widget-heading" data-id="154ab8e" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-medium"><b>SÃO MILHARES DE PESSOAS <span style="background-color:#18C800">LUCRANDO</span> DIARIAMENTE:</b></h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-f8e15b8 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="f8e15b8" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;dots&quot;,&quot;slides_to_show&quot;:&quot;1&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper">
-								<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639697-300x284.jpg" alt="photo5102960067715639697" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639700-300x270.jpg" alt="photo5102960067715639700" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo4913428821710055949-300x218.jpg" alt="photo4913428821710055949" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639699-300x280.jpg" alt="photo5102960067715639699" /></figure></div>			</div>
-												<div class="swiper-pagination"></div>
-													</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-68f66e42 elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="68f66e42" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6cc87e8e" data-id="6cc87e8e" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-46723f3c elementor-widget elementor-widget-image" data-id="46723f3c" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="313" height="281" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24.png 313w, //i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/24-300x269.png 300w" sizes="(max-width: 313px) 100vw, 313px" />															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6cf6ac4c" data-id="6cf6ac4c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-30efc0ef elementor-widget elementor-widget-heading" data-id="30efc0ef" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Você terá um robô analisando e enviando
-os melhores jogos 24 horas com um método
-de análise exclusivo para você investir de forma
-inteligente e profissional no Trading Esportivo.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-db30ec2 elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="db30ec2" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4b092a6a" data-id="4b092a6a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-76e5765e elementor-widget elementor-widget-image" data-id="76e5765e" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="323" height="344" src="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO.png 323w, //i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/TEMPO-282x300.png 282w" sizes="(max-width: 323px) 100vw, 323px" />															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-60f49724" data-id="60f49724" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-35873082 elementor-widget elementor-widget-heading" data-id="35873082" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Agora você não irá precisar mais ficar analisando
-jogo por jogo. O <b>SoccerBOT</b> fará isso por você, e
-o melhor… Lucre em apenas alguns cliques
-apenas copiando e colando os sinais.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4e4c1953 elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e4c1953" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-24e226c8" data-id="24e226c8" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3a3bfd9f elementor-widget elementor-widget-image" data-id="3a3bfd9f" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="432" height="331" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE.png" class="attachment-large size-large" alt="" loading="lazy" srcset="//i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE.png 432w, //i0.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/RENTABILIDADE-300x230.png 300w" sizes="(max-width: 432px) 100vw, 432px" />															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5fd6cb7b" data-id="5fd6cb7b" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-5334fa57 elementor-widget elementor-widget-heading" data-id="5334fa57" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Com os filtros e estratégias do robô que já
-foram testados e validados, você terá resultados
-positivos e consistentes em suas operações,
-obviamente sempre mantendo a gestão de banca.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-e4bc092 elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e4bc092" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-076262b" data-id="076262b" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-9a3c017 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9a3c017" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-504fd3c elementor-widget elementor-widget-heading" data-id="504fd3c" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">SÃO MILHARES DE PESSOAS <span style="background-color:#18C800">LUCRANDO</span> DIARIAMENTE:</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-f6521b4 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="f6521b4" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;dots&quot;,&quot;slides_to_show&quot;:&quot;1&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper">
-								<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639697-300x284.jpg" alt="photo5102960067715639697" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639700-300x270.jpg" alt="photo5102960067715639700" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo4913428821710055949-300x218.jpg" alt="photo4913428821710055949" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/05/photo5102960067715639699-300x280.jpg" alt="photo5102960067715639699" /></figure></div>			</div>
-												<div class="swiper-pagination"></div>
-													</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-514a8f13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="514a8f13" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f8e7f22" data-id="4f8e7f22" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-73f17079 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73f17079" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2893029e" data-id="2893029e" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-699f6162 elementor-widget elementor-widget-heading" data-id="699f6162" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">E NÃO PARA POR AQUI, ALÉM DO ROBÔ
-VOCÊ TAMBÉM VAI  <font color="#18C800">RECEBER ESSES BÔNUS:</font>
-</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e5b458f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e5b458f" data-element_type="section" data-settings="{&quot;animation_mobile&quot;:&quot;fadeInLeft&quot;,&quot;animation&quot;:&quot;none&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-425d10b0" data-id="425d10b0" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-add8583 elementor-widget elementor-widget-image" data-id="add8583" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="130" height="131" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/coroa.png" class="attachment-large size-large" alt="" loading="lazy" />															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6c765697" data-id="6c765697" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-4379afae elementor-widget elementor-widget-heading" data-id="4379afae" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><b><font color="#18C800">ACESSO VITALÍCIO:</font></b> Chega de pagar mensalidades em grupos sem
-resultados, adquirindo o robô o pagamento é feito apenas uma única
-vez e você recebe o acesso vitalício as análises e estratégias exclusivas!</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-303b8667 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="303b8667" data-element_type="section" data-settings="{&quot;animation_mobile&quot;:&quot;fadeInLeft&quot;,&quot;animation&quot;:&quot;none&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7096c272" data-id="7096c272" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-71d8e6cb elementor-widget elementor-widget-image" data-id="71d8e6cb" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="130" height="130" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/check.png" class="attachment-large size-large" alt="" loading="lazy" />															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-403ccff7" data-id="403ccff7" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-f32a767 elementor-widget elementor-widget-heading" data-id="f32a767" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><b><font color="#18C800">HACKEANDO O ALGORITMO:</font></b> Você irá aprender uma única estratégia
-oculta que utilizamos para faturar múltiplos dígitos todos os meses
-com o mercado esportivo!</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-78ddd555 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78ddd555" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bdaac58" data-id="7bdaac58" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-21800481 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="21800481" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-534980bd" data-id="534980bd" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-61d9c2c1 elementor-widget elementor-widget-heading" data-id="61d9c2c1" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;tada&quot;,&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">E AGORA, <span style="background-color:#18C800">DE QUAL LADO</span> VOCÊ IRÁ FICAR?</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<div class="elementor-element elementor-element-5ee1f862 elementor-widget elementor-widget-text-editor" data-id="5ee1f862" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Do lado daqueles que:</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-51ccb3ca elementor-widget elementor-widget-text-editor" data-id="51ccb3ca" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><strong>Vão continuar perdendo tempo e sendo iludidos com estratégias inúteis dos falsos gurus, vão continuar seguindo a boiada e no final se frustrando com os resultados ruins ou inexistentes…</strong></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-8e1aa06 elementor-widget elementor-widget-text-editor" data-id="8e1aa06" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Ou do lado daqueles que:</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-37f8aeb4 elementor-widget elementor-widget-text-editor" data-id="37f8aeb4" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><strong><span style="background-color: #f5c200;">Sabem dominar os segredos das estratégias ocultas que poucas pessoas conhecem, e tem resultados consistentes no automático todos os dias de forma inteligente e profissional.</span></strong></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-58279288 elementor-widget elementor-widget-text-editor" data-id="58279288" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Bom, não preciso responder, acho que você já sabe pra qual caminho deve ir…</p>						</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2905a243 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2905a243" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6bb9310" data-id="6bb9310" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-bf9293f elementor-widget elementor-widget-heading" data-id="bf9293f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">De <del><b>R$ 197</b></del></h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-4ca42975 elementor-widget elementor-widget-heading" data-id="4ca42975" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">por apenas</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-1cfbfd4e elementor-widget elementor-widget-heading" data-id="1cfbfd4e" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;tada&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><span style="background-color:#18C800">R$ 9,90</span></h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-5dedcf1b elementor-widget elementor-widget-heading" data-id="5dedcf1b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-medium"><b>MAS VOCÊ PRECISA AGIR RÁPIDO... ⚠️</b></h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<div class="elementor-element elementor-element-239a4fa8 elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="239a4fa8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;shake&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://pay.kiwify.com.br/Tel8bQj" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bob" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">QUERO ADQUIRIR POR MENOS DE R$0,33 POR DIA!</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-368c99d2 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="368c99d2" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
-										<span class="elementor-icon-list-text">Suas informações estão seguras conosco.</span>
-									</li>
-						</ul>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-5fe32413 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5fe32413" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3565f4ca" data-id="3565f4ca" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-67a29878 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="67a29878" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2f1deb90" data-id="2f1deb90" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-2cfcb56b elementor-widget elementor-widget-heading" data-id="2cfcb56b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">OFERTA ENCERRA EM...</h2>		</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-69d4d262" data-id="69d4d262" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-630edb38 elementor-countdown--label-block elementor-widget elementor-widget-countdown" data-id="630edb38" data-element_type="widget" data-widget_type="countdown.default">
-				<div class="elementor-widget-container">
-					<div data-evergreen-interval="4440" class="elementor-countdown-wrapper" data-date="">
-			<div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-hours"></span> <span class="elementor-countdown-label">HORAS</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-minutes"></span> <span class="elementor-countdown-label">MINUTOS</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-seconds"></span> <span class="elementor-countdown-label">SEGUNDOS</span></div>		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1d0363b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d0363b7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-512ab104" data-id="512ab104" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-4a23c545 elementor-widget elementor-widget-image" data-id="4a23c545" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="https://t.me/osoccerbot">
-							<img width="356" height="124" src="//i2.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/whatsapp-1.png" class="elementor-animation-grow attachment-large size-large" alt="" loading="lazy" srcset="//i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/whatsapp-1.png 356w, //i1.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/whatsapp-1-300x104.png 300w" sizes="(max-width: 356px) 100vw, 356px" />								</a>
-															</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1b3fca5a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b3fca5a" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3313da02" data-id="3313da02" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b2f24ce elementor-widget elementor-widget-image" data-id="b2f24ce" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="279" height="274" src="//i3.wp.com/robodeanalises.com.br/wp-content/uploads/2022/04/SELO-7-DIAS.png" class="attachment-large size-large" alt="" loading="lazy" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-54d67e8a elementor-widget elementor-widget-heading" data-id="54d67e8a" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">OU <span style="background-color:#18C800">VOCÊ LUCRA COM O ROBÔ,</span> OU DEVOLVEMOS SEU DINHEIRO!</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7f0f89c elementor-widget elementor-widget-text-editor" data-id="7f0f89c" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Caso ainda esteja em dúvida, para te ajudar na sua decisão, você vai receber uma <strong>garantia exclusiva de 7 dias</strong>!</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-3838bd14 elementor-widget elementor-widget-text-editor" data-id="3838bd14" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Queremos que você tenha toda a tranquilidade se por algum motivo, acreditar que não terá resultados com o robô e com nossas estratégias, <strong>nós devolvemos 100% do seu dinheiro</strong>!</p>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<div class="elementor-element elementor-element-6c38bdab elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="6c38bdab" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;shake&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://pay.kiwify.com.br/Tel8bQj" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bob" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">QUERO ADQUIRIR POR MENOS DE R$0,33 POR DIA!</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-11162d75 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="11162d75" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
-										<span class="elementor-icon-list-text">Suas informações estão seguras conosco.</span>
-									</li>
-						</ul>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-58db1aca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="58db1aca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3b107b60" data-id="3b107b60" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-3f9eaf52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f9eaf52" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-207b53bb" data-id="207b53bb" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-35ca4458 elementor-widget elementor-widget-heading" data-id="35ca4458" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">PERGUNTAS <font color="#18C800">FREQUENTES</font>
-</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7b219ed2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b219ed2" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-34e8772c" data-id="34e8772c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-6f09f980 elementor-widget elementor-widget-toggle" data-id="6f09f980" data-element_type="widget" data-widget_type="toggle.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-toggle{text-align:left}.elementor-toggle .elementor-tab-title{font-weight:700;line-height:1;margin:0;padding:15px;border-bottom:1px solid #d4d4d4;cursor:pointer;outline:none}.elementor-toggle .elementor-tab-title .elementor-toggle-icon{display:inline-block;width:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon svg{-webkit-margin-start:-5px;margin-inline-start:-5px;width:1em;height:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-right{float:right;text-align:right}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-left{float:left;text-align:left}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-closed{display:block}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-opened{display:none}.elementor-toggle .elementor-tab-title.elementor-active{border-bottom:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-closed{display:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-opened{display:block}.elementor-toggle .elementor-tab-content{padding:15px;border-bottom:1px solid #d4d4d4;display:none}@media (max-width:767px){.elementor-toggle .elementor-tab-title{padding:12px}.elementor-toggle .elementor-tab-content{padding:12px 10px}}</style>		<div class="elementor-toggle" role="tablist">
-							<div class="elementor-toggle-item">
-					<div id="elementor-tab-title-1861" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-1861" aria-expanded="false">
-												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
-															<span class="elementor-toggle-icon-closed"><i class="fas fa-chevron-down"></i></span>
-								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-chevron-up"></i></span>
-													</span>
-												<a href="" class="elementor-toggle-title">CONSIGO FAZER AS OPERAÇÕES SOMENTE COM O MEU CELULAR?</a>
-					</div>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=699145594655336&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+  </head>
+  <body>
+    
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <!-- Imagem Ultrasecreto -->
+            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
 
-					<div id="elementor-tab-content-1861" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1861"><p>Sim! De qualquer lugar que você estiver, tendo uma conexão com a internet, você conseguirá lucrar em apenas alguns cliques com o seu celular.</p></div>
-				</div>
-							<div class="elementor-toggle-item">
-					<div id="elementor-tab-title-1862" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-1862" aria-expanded="false">
-												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
-															<span class="elementor-toggle-icon-closed"><i class="fas fa-chevron-down"></i></span>
-								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-chevron-up"></i></span>
-													</span>
-												<a href="" class="elementor-toggle-title">NÃO ENTENDO NADA DE FUTEBOL, ISSO É PRA MIM?</a>
-					</div>
+            <!-- Headline -->
+            <h3 class="my-4"><b>ATENÇÃO: EMPRESAS ABREM VAGAS HOME OFFICE APENAS PARA BRASILEIROS...</b></h3>
 
-					<div id="elementor-tab-content-1862" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1862"><p>Claro! Você não precisa ser nenhum especialista para lucrar no trading esportivo, o robô faz todo o trabalho para você, ele analisa simultaneamente todos os jogos que estão acontecendo, e assim que identifica as melhores oportunidades de investimento, ele envia o sinal para você de forma 100% automática, você só precisa copiar e colar.</p></div>
-				</div>
-							<div class="elementor-toggle-item">
-					<div id="elementor-tab-title-1863" class="elementor-tab-title" data-tab="3" role="tab" aria-controls="elementor-tab-content-1863" aria-expanded="false">
-												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
-															<span class="elementor-toggle-icon-closed"><i class="fas fa-chevron-down"></i></span>
-								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-chevron-up"></i></span>
-													</span>
-												<a href="" class="elementor-toggle-title">QUANTAS OPERAÇÕES SÃO ENVIADAS POR DIA?</a>
-					</div>
+            <!-- VSL -->
+            <div id="vid_62b135423d3318000a43b2b8" style="position:relative;width:100%;padding: 56.666666666666664% 0 0;"><img id="thumb_62b135423d3318000a43b2b8" src="https://images.converteai.net/711ea486-6a0f-4bdf-96a4-5c150422927c/players/62b135423d3318000a43b2b8/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62b135423d3318000a43b2b8" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62b135423d3318000a43b2b8">var s=document.createElement("script");s.src="https://scripts.converteai.net/711ea486-6a0f-4bdf-96a4-5c150422927c/players/62b135423d3318000a43b2b8/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <!-- Botão 1 -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/JExOu4Q" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO O PROFISSÃO DOS SONHOS AGORA MESMO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-					<div id="elementor-tab-content-1863" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-1863"><p>O número de operações vai depender muito da quantidade de oportunidades que o robô encontrar no mercado, mas gira em torno de 10 a 20 entradas por dia, geralmente no final de semana tem muito mais oportunidades do que os outros dias.</p></div>
-				</div>
-							<div class="elementor-toggle-item">
-					<div id="elementor-tab-title-1864" class="elementor-tab-title" data-tab="4" role="tab" aria-controls="elementor-tab-content-1864" aria-expanded="false">
-												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
-															<span class="elementor-toggle-icon-closed"><i class="fas fa-chevron-down"></i></span>
-								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-chevron-up"></i></span>
-													</span>
-												<a href="" class="elementor-toggle-title">TENHO SUPORTE PARA TIRAR DÚVIDAS?</a>
-					</div>
+    <section class="comments py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="fb-comments" style="margin-top: 5px;">
+              <div class="fb-comments-header">
+                <span>21 comentarios</span>
+              </div>
+              <div class="fb-comments-wrapper" id="2">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m2.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Valesca Silva</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Eu sou uma pessoa que já tentou de TUDO, muita coisa mesmo, pra ganhar dinheiro na internet. Só fiquei frustrada por não ter resultado nenhum. Comprei um curso que prometia rios de dinheiro, e no final só ensinava a vender o próprio curso. Outro que apostava por meio de sinal de pessoas altamente capacitadas e não era nada disso. Outros que não valem nem a pena citar aqui. Eu voltei a trabalhar no meu emprego (sou enfermeira), mas nunca tirei da cabeça que minha hora chegaria. Quando eu me deparei com o Profissão Dos Sonhos, logo de cara mostrei pros meus familiares e DESCARTEI, pq já estava frustrada com outras experiências. Mas meu cunhado comprou e no dia xinguei ele por isso kkk E para contrariar todas as minhas expectativas, ele começou a ganhar dinheiro. Logo eu entrei e começamos uma "competição" saudável. Hoje eu consigo trabalhar umas 3 horas por dia e to ganhando mais do que como enfermeira já, pq a gente aprende quais são as tarefas que pagam mais e que a gente gasta menos tempo pra fazer. Pretendo focar somente nisso em pouco tempo, apesar de amar o que eu faço… Bom, esta é a visão de alguém que já passou por muita coisa na internet, quase desistiu e hoje se encontrou. Espero realmente que minha história ajude cada um de vocês.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>8</likes>
+                        
+                        <date>4 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="3">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m3.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Vitória Pereira</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Não sou de acreditar nas coisas da internet, mas a menina que trabalha com minha tia ta tendo resultado com esse curso aí. Só por isso to pensando em comprar.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>9</likes>
+                        
+                        <date>5 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="4">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m5.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Juliana Castro</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Sinceramente, nunca vi nada igual. Em 1 semana consegui faturar quase 2 mil reais! Só seguindo as dicas iniciais que ele oferece. Não sou de fazer isso, mas precisava vir aqui agradecer a oportunidade.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>15</likes>
+                        
+                        <date>19 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="6">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m6.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Isabella Lopes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Eu já tinha comprado uns cursos pra ganhar dinheiro na internet, mas nenhum fala o que esse método falou. Os outros são só enrolação.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>17</likes>
+                        
+                        <date>24 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="7">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m7.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Fernando Gomes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Vou ser sincero, nunca prestei atenção na aula de Inglês kkk eu achava q não conseguiria pq n manjo de inglês, mas nem precisa, é mto fácil de seguir... a internet é uma mãe!!! Tem o módulo só com trabalhos em Português</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>18</likes>
+                        
+                        <date>26 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="9">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m11.jpeg">
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Rafaela Souza</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Eu não botei fé no início, mas tamo indo bem. To com 3 pessoas da minha família que estão ganhando já tbm, então da bom sim</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>22</likes>
+                        
+                        <date>39 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 5 comentários</button>
+              <div style="display:none" id="more">
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="10">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m12.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Ana Sofia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Vou comprar!! Se todo mundo ta conseguindo, eu também consigo obrigado 😍😍😍</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>41</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="11">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m15.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Laura Flores</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text"> Eu paguei no cartão, o acesso veio na hora e achei mais fácil… To no segundo dia e já consegui fechar 3 trabalhos pra 1 semana! Sem palavras!!! 🙏🙏🙏🙏🙏🙏</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>40</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="12">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m16.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Daniela Costa</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Olha... eu posso dizer que existia uma Sarah antes e outra dps do profissão dos sonhos. É incrível! Poder trabalhar de casa é a melhor coisa foreveeeerrrr! Ontem mesmo eu estava meio cansada e tirei um cochilo 2 da tarde !! kkkk 😊😊</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>47</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="13">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m17.jpeg"></td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Juliana Dias</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Em duas semanas comecei a ver resultados, muito bom</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>50</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="14">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m18.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Isabelle Correia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Exatamente… falou pouco, mas falou (muito) bonito kkk , é simples, e tem o suporte deles tbm pra ajudar… Mas me chama lá no grupo de alunos que eu te ajudo no começo, se quiser</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>66</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Botão 2 -->
+            <div id="cta2" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/JExOu4Q" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO O PROFISSÃO DOS SONHOS AGORA MESMO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div id="elementor-tab-content-1864" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" aria-labelledby="elementor-tab-title-1864"><p>Sim, temos uma equipe especializada disponível 24h para te dar todo o suporte que você precisa, nas dúvidas, ensinando as estratégias, gestão de banca, e muito mais…</p></div>
-				</div>
-								</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-571ed66a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="571ed66a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b79e68f" data-id="b79e68f" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-794aecb3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="794aecb3" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-472e7948" data-id="472e7948" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-6df2c115 elementor-widget elementor-widget-text-editor" data-id="6df2c115" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><span style="color: #ffffff;">Os produtos e serviços vendidos neste site não devem ser interpretados como uma promessa ou garantia de resultados. Os resultados podem variar de pessoa a pessoa. Seu nível de sucesso em alcançar os resultados divulgados com o uso de nossos produtos e informações depende do tempo que você dedica ao programa, técnicas utilizadas, conhecimento e habilidades diferentes. Como esses fatores diferem entre cada indivíduo, não podemos garantir o sucesso ou o nível de resultado, nem somos responsáveis por qualquer de suas ações. Todas e quaisquer declarações prospectivas contidas neste site ou em qualquer um de nossos produtos destinam-se a expressar a nossa opinião sobre os resultados potenciais que algumas pessoas podem alcançar.</span></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-64f6a397 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="64f6a397" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="/termos-de-uso">
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    </footer>
 
-											<span class="elementor-icon-list-text">Termos de Uso</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="/politicas-de-privacidade">
+    <script type="text/javascript">
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1294000); // temporização da Call to Action (em milissegundos)
+    </script>
 
-											<span class="elementor-icon-list-text">Políticas de Privacidade</span>
-											</a>
-									</li>
-						</ul>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-77e7d67a elementor-widget elementor-widget-heading" data-id="77e7d67a" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Millions Bot © 2022. Todos os direitos reservados.</h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-							</div>
-		<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=529849962027508&ev=PageView&noscript=1&cd%5Bpage_title%5D=Rob%C3%B4+de+Gols&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=259&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=robodeanalises.com.br%2Frobo-de-gols" alt="facebook_pixel"></noscript>
-<link rel='stylesheet' id='e-animations-css'  href='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.6.1' type='text/css' media='all' />
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.1' id='elementor-pro-webpack-runtime-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.1' id='elementor-webpack-runtime-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.1' id='elementor-frontend-modules-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.1' id='elementor-sticky-js'></script>
-<script type='text/javascript' id='elementor-pro-frontend-js-before'>
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/robodeanalises.com.br\/wp-admin\/admin-ajax.php","nonce":"58cdf02af4","urls":{"assets":"https:\/\/robodeanalises.com.br\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/robodeanalises.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-</script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.1' id='elementor-pro-frontend-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
-<script type='text/javascript' id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"hello-theme-header-footer":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true},"urls":{"assets":"https:\/\/robodeanalises.com.br\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":259,"title":"Rob%C3%B4%20de%20Gols%20%E2%80%93%20ROB%C3%94%20DE%20GOLS","excerpt":"","featuredImage":false}};
-</script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.1' id='elementor-frontend-js'></script>
-<script type='text/javascript' src='https://robodeanalises.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.2.1' id='pro-elements-handlers-js'></script>
-	</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+  </body>
 </html>
